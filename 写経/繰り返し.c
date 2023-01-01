@@ -162,3 +162,22 @@ int main(void)
     return 0;
 }
 
+// scanfを1回しか使わない
+#include <stdio.h>
+
+int main(void)
+{
+    int r;
+    double s;
+
+    do
+    {
+        printf("hankei ?");
+        scanf("%d", &r);
+    }
+    while (r < 0);
+        s = r * r * 3.14;
+        printf("menseki is %f. \n", s);
+
+    return 0;
+}
