@@ -5,6 +5,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// 各桁の和を求める
 int find(int n){
     int sum = 0;
     while ( n > 0){
@@ -19,6 +20,7 @@ int main(){
     cin N >> A >> B;
     int total = 0;
 
+    // i番目の合計を求める
     for (int i = 1; i < N+1; i++){
         int sum = find(i);
         if (sum >= A && sum <= B){
